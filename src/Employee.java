@@ -30,6 +30,13 @@ public class Employee {
     longServiceLeave = 10.0; // new staff are given a bonus 10 hours long
                              // service leave
   }
+  
+  public Employee(int ID, String fName, String sName, String add) {
+	  staffID = ID;
+	  firstName= fName;
+	  surname = sName;
+	  address = add;
+  }
 
   /**
    * No-Arg Constructor - create the new employee object with some default
@@ -41,7 +48,7 @@ public class Employee {
     firstName = "not known";
     surname = "not known";
   }
-
+  
   /**
    * @param ID
    *          - The new employees staff identification number
@@ -62,8 +69,8 @@ public class Employee {
 	  address = add;
   }
   
-  public void setAnnualLeave(double anLeave) {
-	  annualLeave = anLeave;
+  public void setAnnualLeave(double leave) {
+	  annualLeave = leave;
   }
   
   public void setLongServiceLeave(double srleave) { 
