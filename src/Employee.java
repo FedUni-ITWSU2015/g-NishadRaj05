@@ -84,9 +84,17 @@ public class Employee {
   public String getFirstName() {
     return firstName;
   }
+  
+  public String getSurname() {
+	  return surname; 
+  }
 
   public String getAddress() {
     return address;
+  }
+  
+  public double getAnnualLeave() {
+	  return annualLeave; 
   }
 
   public double getLongServiceLeave() {
