@@ -58,6 +58,18 @@ public class Employee {
 	  surname = lName;
   }
   
+  public void setAddress(String add) {
+	  address = add;
+  }
+  
+  public void setAnnualLeave(double anLeave) {
+	  annualLeave = anLeave;
+  }
+  
+  public void setLongServiceLeave(double srleave) { 
+	  longServiceLeave = srleave; 
+  }
+  
   /*
    * All other 'set' methods should also be defined in this class file.
    */
