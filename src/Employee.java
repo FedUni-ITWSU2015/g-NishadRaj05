@@ -37,9 +37,9 @@ public class Employee {
    * not particularly sensible values to choose.
    */
   public Employee() {
-    staffID = 99999;
-    firstName = "Fred";
-    surname = "Smith";
+    staffID = -1;
+    firstName = "not known";
+    surname = "not known";
   }
 
   /**
