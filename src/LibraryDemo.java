@@ -8,6 +8,11 @@ public class LibraryDemo {
         
         System.out.println("Book: " + book1.getTitle() + " | Available: " + book1.getAvailable());
         System.out.println("Patron: " + patron1.getName() + " | Books Borrowed: " + patron1.getNumberOfBooksBorrowed());
+        
+        if (book1.getAvailable()) {
+            book1.checkOut();
+            patron1.borrowBook();
+        }
 	}
 
 }
