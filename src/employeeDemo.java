@@ -51,6 +51,18 @@ public class employeeDemo {
         System.out.println("Annual Leave: " + geek.getAnnualLeave());
 	    System.out.println("Long Service Leave: " + geek.getLongServiceLeave());
         System.out.println("Address: " + geek.getAddress());
-
+        
+        geek.setAnnualLeave(40);
+        
+	    System.out.println("\nCongratulaions " + geek.getFirstName() + ", you made it through your first year.");
+	    System.out.println("You now have annual leave available to you.");
+	    System.out.println("\nLet's check the values of you employee object to see hw much leave you can take.");
+	    
+        System.out.println("StaffID: " + geek.getStaffID());
+        System.out.println("First Name: " + geek.getFirstName());
+        System.out.println("Surname: " + geek.getSurname());
+        System.out.println("Annual Leave: " + geek.getAnnualLeave());
+	    System.out.println("Long Service Leave: " + geek.getLongServiceLeave());
+        System.out.println("Address: " + geek.getAddress());
 	  }
 }
