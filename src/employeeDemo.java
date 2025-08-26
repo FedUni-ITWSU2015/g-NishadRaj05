@@ -6,7 +6,7 @@ public class employeeDemo {
 	     * This program demonstrates the use of the Employee class and some of its
 	     * methods including the two constructors
 	     */
-/*
+
 	    Employee person = new Employee(54545, "Bob", "Down", 7.5);
 	    System.out.println("Values for person object:");
 	    System.out.println("Staff ID: " + person.getStaffID());
@@ -22,7 +22,7 @@ public class employeeDemo {
 	    System.out.println("Annual Leave: " + accountant.getAnnualLeave());
 	    System.out.println("Long Service Leave: " + accountant.getLongServiceLeave());
 	    System.out.println("Home Address: " + accountant.getAddress());
-	    */
+	    
 	    Scanner scan = new Scanner(System.in);
 	    
         System.out.print("Let's create the geek object. Please enter the following data for the geek object.");
