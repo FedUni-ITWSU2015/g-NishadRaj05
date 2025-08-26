@@ -28,5 +28,20 @@ public class Book {
     public void setAvailable(boolean available) {
         this.available = available;
     }
+    
+    public String getTitle() {
+        return title;
+    }
 
+    public String getAuthor() {
+        return author;
+    }
+    
+    public String getIsbn() {
+        return isbn;
+    }
+    
+    public boolean getAvailable() {
+        return available;
+    }
 }
