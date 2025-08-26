@@ -8,6 +8,9 @@ public class BankAccountDemo {
 		System.out.println("Account Number: " + acc.getAccountNumber());
         System.out.println("Account Holder: " + acc.getAccountHolderName());
         System.out.println("Initial Balance: $" + acc.getBalance());
+        
+        acc.deposit(15000.0);
+        System.out.println("Balance after deposit: $" + acc.getBalance());
 	}
 
 }
