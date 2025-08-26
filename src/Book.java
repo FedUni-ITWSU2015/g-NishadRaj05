@@ -53,4 +53,13 @@ public class Book {
             System.out.println("Book \"" + title + "\" is not available.");
         }
     }
+    
+    public void returnBook() {
+        if (!available) {
+            available = true;
+            System.out.println("Book \"" + title + "\" has been returned.");
+        } else {
+            System.out.println("Book \"" + title + "\" was not borrowed.");
+        }
+    }
 }
