@@ -22,4 +22,16 @@ public class Patron {
     public void setNumberOfBooksBorrowed(int numberOfBooksBorrowed) {
         this.numberOfBooksBorrowed = numberOfBooksBorrowed;
     }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public String getPatronId() {
+        return patronId;
+    }
+    
+    public int getNumberOfBooksBorrowed() {
+        return numberOfBooksBorrowed;
+    }
 }
