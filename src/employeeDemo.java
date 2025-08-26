@@ -101,7 +101,7 @@ public class employeeDemo {
             displayEmployee(geek);
         }
 
-        
+        scan.close();
     }
 
     // Helper method to display employee details
