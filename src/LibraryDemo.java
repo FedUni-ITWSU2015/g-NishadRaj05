@@ -13,6 +13,16 @@ public class LibraryDemo {
             book1.checkOut();
             patron1.borrowBook();
         }
+        
+        System.out.println("Book: " + book1.getTitle() + " | Available: " + book1.getAvailable());
+        System.out.println("Patron: " + patron1.getName() + " | Books Borrowed: " + patron1.getNumberOfBooksBorrowed());
+        
+        book1.returnBook();
+        patron1.returnBook();
+
+        
+        System.out.println("Book: " + book1.getTitle() + " | Available: " + book1.getAvailable());
+        System.out.println("Patron: " + patron1.getName() + " | Books Borrowed: " + patron1.getNumberOfBooksBorrowed());
 	}
 
 }
