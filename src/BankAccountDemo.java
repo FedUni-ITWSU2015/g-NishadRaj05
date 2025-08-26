@@ -11,6 +11,10 @@ public class BankAccountDemo {
         
         acc.deposit(15000.0);
         System.out.println("Balance after deposit: $" + acc.getBalance());
+        
+        acc.withdraw(10000.0);
+        System.out.println("Balance after withdrawal: $" + acc.getBalance());
+
 	}
 
 }
