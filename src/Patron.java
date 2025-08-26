@@ -10,4 +10,16 @@ public class Patron {
         this.patronId = patronId;
         this.numberOfBooksBorrowed = 0; 
     }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public void setPatronId(String patronId) {
+        this.patronId = patronId;
+    }
+    
+    public void setNumberOfBooksBorrowed(int numberOfBooksBorrowed) {
+        this.numberOfBooksBorrowed = numberOfBooksBorrowed;
+    }
 }
