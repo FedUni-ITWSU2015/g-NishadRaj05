@@ -20,4 +20,17 @@ public class BankAccount {
         }
     }
     
+    public void withdraw(double amount) {
+        if (amount > 0) {
+            if (accountBalance >= amount) {
+                accountBalance -= amount;
+                System.out.println("Withdrew: $" + amount);
+            } else {
+                System.out.println("Insufficient funds. Withdrawal denied.");
+            }
+        } else {
+            System.out.println("Withdrawal amount must be positive.");
+        }
+    }
+
 }
