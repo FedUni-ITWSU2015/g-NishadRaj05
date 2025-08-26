@@ -34,4 +34,18 @@ public class Patron {
     public int getNumberOfBooksBorrowed() {
         return numberOfBooksBorrowed;
     }
+    
+    public void borrowBook() {
+        numberOfBooksBorrowed++;
+        System.out.println(name + " has borrowed a book. Total number of books now: " + numberOfBooksBorrowed);
+    }
+
+    public void returnBook() {
+        if (numberOfBooksBorrowed > 0) {
+            numberOfBooksBorrowed--;
+            System.out.println(name + " has returned a book. Total number of books now: " + numberOfBooksBorrowed);
+        } else {
+            System.out.println(name + " does not have any books to return.");
+        }
+    }
 }
