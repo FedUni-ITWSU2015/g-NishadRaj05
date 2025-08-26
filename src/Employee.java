@@ -116,20 +116,19 @@ public class Employee {
    * @param requestedHours  – the number of hours of leave requested by the employee
    * @return true if has enough leave, false otherwise
    */
-   public boolean hasEnoughLeave(String leaveType, float requestedHours) {
+   public boolean requestLeave(String leaveType, float requestedHours) {
 	   if (leaveType.equalsIgnoreCase("A")) {
-	     if (annualLeave >= requestedHours) {
+	     if (annualLeave >= requestedHours) { 
+	    	 annualLeave = annualLeave - requestedHours;
 	       return true;
-	     } else {
-	       return false;
 	     }
-	   } else {
+	    }  else
 	     if (longServiceLeave >= requestedHours) {
+	    	 longServiceLeave -= requestedHours; 
 	       return true;
-	     } else {
-	       return false;
-	     }
-	   }
+	     } 
+	     return false;
+	   
    }
 
 } // end Employee class
