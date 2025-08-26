@@ -44,4 +44,13 @@ public class Book {
     public boolean getAvailable() {
         return available;
     }
+    
+    public void checkOut() {
+        if (available) {
+            available = false;
+            System.out.println("Book " + title + " has been checked out.");
+        } else {
+            System.out.println("Book \"" + title + "\" is not available.");
+        }
+    }
 }
