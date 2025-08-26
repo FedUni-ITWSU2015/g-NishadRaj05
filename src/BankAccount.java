@@ -26,11 +26,23 @@ public class BankAccount {
                 accountBalance -= amount;
                 System.out.println("Withdrew: $" + amount);
             } else {
-                System.out.println("Insufficient funds. Withdrawal denied.");
+                System.out.println("Not Enough Funds!! Withdrawal denied.");
             }
         } else {
             System.out.println("Withdrawal amount must be positive.");
         }
+    }
+    
+    public double getBalance() {
+        return accountBalance;
+    }
+    
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
     }
 
 }
